@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style-sign.css" />
+    <title>Sign-up</title>
+  </head>
+  <body>
+    <div class="signUp__wp">
+      <form action="">
+        <h1 class="title">Đăng ký</h1>
+        <div class="wp-userName">
+          <label for="">Họ</label>
+          <input type="text" class="fistname" id="fistName"/>
+          <label for="" class="label__lastname">Tên</label>
+          <input type="text" class="lastname" id="lastName"/>
+        </div>
+        <div class="signUp__wp-email">
+          <label for="" class="signUp__label-email">Email</label>
+          <input type="text" class="signUp__email-input" id="signUp__email-input" />
+        </div>
+        <div class="signUp__wp-password">
+          <label for="" class="signUp__label-password">Password</label>
+          <input
+            type="text"
+            class="signUp__password-input"
+            id="signUp__password-input" 
+          />
+        </div>
+        <button onclick="SignUp(event)" class="signUp__button">Nhập</button>
+      </form>
+    </div>
+    <script src="./app.js"></script>
+  </body>
 </html>

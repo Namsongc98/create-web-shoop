@@ -8,23 +8,23 @@
       href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style-signIn.css" />
+    <link rel="stylesheet" href="./style-sign.css" />
 
-    <title>Form-sign</title>
+    <title>Đăng nhập</title>
   </head>
   <body>
     <div class="container">
       <form action="">
-        <h1 class="title">Sign In</h1>
+        <h1 class="title">Đăng nhập</h1>
         <div class="wp-email">
           <label for="" class="label-email">Email</label>
-          <input type="text" class="email-input" id="email-input" />
+          <input type="text" class="email-input" id="signIn__email-input" />
         </div>
         <div class="wp-password">
           <label for="" class="label-password">Password</label>
-          <input type="text" class="password-input" id="password-input" />
+          <input type="text" class="password-input" id="signIn__password-input" />
         </div>
-        <button onclick="add()" class="button-sign-in">Nhập</button>
+        <button onclick="impClick(event)" class="button-sign-in">Nhập</button>
       </form>
     </div>
     <script src="./app.js"></script>
