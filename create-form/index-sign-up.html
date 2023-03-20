@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style-sign.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.min.css">
     <title>Sign-up</title>
   </head>
   <body>
@@ -28,10 +29,11 @@
         <div class="signUp__wp-password">
           <label for="" class="signUp__label-password">Password</label>
           <input
-            type="text"
+            type="password"
             class="signUp__password-input"
             id="signUp__password-input" 
           />
+          <i class="fa-solid fa-eye-slash" onclick="ImsignUp()" id="eye-signUp"></i>
         </div>
         <button onclick="SignUp(event)" class="signUp__button">Nhập</button>
       </form>

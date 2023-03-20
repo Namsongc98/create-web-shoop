@@ -19,7 +19,27 @@ function impClick(e) {
     document.getElementById('signIn__email-input').value = "";
     document.getElementById('signIn__password-input').value = "";
 }
+let count = 0;
+function eyeSignIn() {
+    count++;
+    let eyeSignIn = document.getElementById("eye-signIn");
+    let signInPass = document.getElementById("signIn__password-input");
+    if (count == 1) {
+        signInPass.type = "text";  
+        eyeSignIn.classList.add("fa-eye");
+        
+    } else if(count == 2) {
+        console.log("ugytft")
+        signInPass.type = "password";
+        eyeSignIn.classList.remove("fa-eye");
+        count = 0;
+    }
+}
 
+
+
+
+// phần đăng ký
 let listSignUp = JSON.parse(localStorage.getItem("listSignUp"))
 function SignUp(e) {
     e.preventDefault(e);
@@ -45,4 +65,19 @@ function SignUp(e) {
     document.getElementById("lastName").value = "";
     document.getElementById("signUp__email-input").value = "";
     document.getElementById("signUp__password-input").value = "";
+}
+function ImsignUp() {
+    count++;
+    let eyeSignIn = document.getElementById("eye-signUp");
+    let signInPass = document.getElementById("signUp__password-input");
+    if (count == 1) {
+        signInPass.type = "text";  
+        eyeSignIn.classList.add("fa-eye");
+        
+    } else if(count == 2) {
+        console.log("ugytft")
+        signInPass.type = "password";
+        eyeSignIn.classList.remove("fa-eye");
+        count = 0;
+    }
 }

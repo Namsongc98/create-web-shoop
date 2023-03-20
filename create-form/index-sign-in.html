@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.3.0-web/css/all.min.css"
+    />
     <link rel="stylesheet" href="./style-sign.css" />
 
     <title>Đăng nhập</title>
@@ -22,8 +26,15 @@
         </div>
         <div class="wp-password">
           <label for="" class="label-password">Password</label>
-          <input type="text" class="password-input" id="signIn__password-input" />
+          <input
+            type="password"
+            class="password-input"
+            id="signIn__password-input"
+          />
+          <!-- <i class="fa-solid fa-eye"></i> -->
+          <i class="fa-solid fa-eye-slash" id="eye-signIn" onclick="eyeSignIn()"></i>
         </div>
+        <a href="./index-sign-up.html" class="Sign-in__link">Tạo tài khoản!</a>
         <button onclick="impClick(event)" class="button-sign-in">Nhập</button>
       </form>
     </div>

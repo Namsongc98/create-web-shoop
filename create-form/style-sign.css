@@ -29,8 +29,8 @@ body {
 .wp-email {
     width: 95%;
     height: 40px;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     border: 1px solid grey;
     margin: 20px auto;
     border-radius: 10px;
@@ -39,20 +39,23 @@ body {
 
 .label-password,
 .label-email {
-
+    display: inline-block;
     font-size: 16px;
     min-width: 80px;
 }
 
 .email-input,
 .password-input {
-
     width: 60%;
     border: none;
     border-bottom: 1px solid grey;
     outline: none;
 }
-
+.Sign-in__link{
+    display: inline-block;
+    margin: 0px auto 10px 20px;
+    text-decoration: none;
+}
 .button-sign-in {
     width: 95%;
     height: 30px;
@@ -62,7 +65,7 @@ body {
 
 /* phần sign-up */
 .signUp__wp {
-    width: 450px;
+   max-width: 450px;
     height: 500px;
     background-color: white;
     border-radius: 10px;
@@ -77,8 +80,9 @@ body {
     margin: 15px;
     width: 95%;
     height: 40px;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+
     border: 1px solid grey;
     margin: 20px auto;
     border-radius: 10px;
@@ -87,6 +91,7 @@ body {
 
 .signUp__label-email,
 .signUp__label-password {
+    display: inline-block;
     font-size: 16px;
     min-width: 80px;
 }
@@ -96,13 +101,14 @@ body {
 
 .fistname,
 .lastname {
+    width: 150px;
     outline: none;
     border: none;
     border-bottom: 1px solid grey;
 }
 .signUp__email-input,
 .signUp__password-input {
-    width: 80%;
+    width: 70%;
     border: none;
     border-bottom: 1px solid grey;
     outline: none;
